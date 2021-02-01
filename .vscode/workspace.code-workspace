@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"name": "Kernel",
+			"path": "../src/kernel/"
+		}, {
+			"name": "libsys",
+			"path": "../src/libsys/"
+		}, {
+			"name": "initrd",
+			"path": "../initrd/"
+		}, {
+			"name": "Documentation",
+			"path": "../doc/"
+		}, {
+			"name": "Project",
+			"path": "../"
+		}
+	]
+}

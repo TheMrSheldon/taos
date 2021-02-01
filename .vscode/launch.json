@@ -1,0 +1,27 @@
+/*{
+	"configurations": [
+		{
+			"name": "Launch",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/bin/release/system",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": false,
+			"preLaunchTask": "Build Release",
+		},
+		{
+			"name": "Launch And Debug",
+			"type": "gdb",
+			"request": "attach",
+			"executable": "${workspaceFolder}/bin/debug/system",
+			"target": "localhost:1234",
+			"remote": true,
+			"gdbpath": "/usr/bin/gdb",
+			"cwd": "${workspaceRoot}"
+		}
+
+	]
+}*/

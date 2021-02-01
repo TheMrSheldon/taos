@@ -9,6 +9,8 @@ CXXFLAGS += -O3 -fomit-frame-pointer -fno-rtti
 # Floating point flags
 CXXFLAGS += -mno-mmx -mno-sse
 
+KERNEL_INCLUDE = $(SRCDIR)/kernel/lib/
+
 
 CMACRO = 
 
@@ -46,7 +48,7 @@ $(DEPDIR)/%.d : $(SRCDIR)/%.cpp
 $(OBJDIR)/%.o : $(SRCDIR)/%.cpp $(MAKEFILE_LIST)
 	@echo "CXX		$@"
 	@if test \( ! \( -d $(@D) \) \) ;then mkdir -p $(@D);fi
-	$(VERBOSE) $(CXX) -c $(CXXFLAGS) -o $@ $<
+	$(VERBOSE) $(CXX) -c $(CXXFLAGS) -o $@ $< -I$(KERNEL_INCLUDE)
 
 $(OBJDIR)/%.asm.o : $(SRCDIR)/%.asm
 	@echo "ASM		$@"
